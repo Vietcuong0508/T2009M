@@ -1,0 +1,46 @@
+﻿@{ Html.BeginForm("Register", "User", FormMethod.Post, new { @class = "w3-container w3-card-4" });}
+    <p>
+        <label>Username</label>
+        <input class="w3-input" type="text" style="width:90%" required>
+    </p>
+    <p>
+        <label>Password</label>
+        <input class="w3-input" type="password" style="width:90%" required>
+    </p>
+    <p>
+        <label>Confirm Password</label>
+        <input class="w3-input" type="password" style="width:90%" required>
+    </p>
+    <p>
+        <label>Email</label>
+        <input class="w3-input" type="text" style="width:90%" required>
+    </p>
+    <p>
+        <label>Gender</label>
+        <input class="w3-radio" type="radio" name="gender" value="male" checked> Male
+        <input class="w3-radio" type="radio" name="gender" value="female"> Female
+        <input class="w3-radio" type="radio" name="gender" value="other"> Other
+    </p>
+    <p>
+        <label>Address</label>
+        <textarea class="w3-input"></textarea>
+    </p>
+    <p>
+        <label>City</label>
+        <select class="w3-select" name="option">
+            <option value="" disabled selected>None</option>
+            <option value="1">Hà Nội</option>
+            <option value="2">Thái Bình</option>
+            <option value="3">Đa Nẵng</option>
+        </select>
+    </p>
+    <p>
+        <label>Favourite</label>
+        <input class="w3-check" type="checkbox" checked="checked"><label>Sugar</label>
+        <input class="w3-check" type="checkbox"><label>Lemon</label>
+    </p>
+    <p>
+        <button class="w3-button w3-section w3-teal w3-ripple"> Register </button>
+        <button type="button" class="w3-button w3-section w3-teal w3-white w3-border"> Reset </button>
+    </p>
+@{Html.EndForm();}

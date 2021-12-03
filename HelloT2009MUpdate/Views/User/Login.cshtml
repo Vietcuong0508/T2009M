@@ -1,0 +1,15 @@
+﻿<h2>Login Form</h2>
+@{ Html.BeginForm("ProcessLogin", "User", FormMethod.Post, new { @class = "w3-container w3-card-4" });}
+    <p>
+        <label>User Name</label>
+        <input class="w3-input" type="text" style="width:90%" required>
+    </p>
+    <p>
+        <label>Password</label>
+        <input class="w3-input" type="password" style="width:90%" required>
+    </p>
+    <p>
+        <button class="w3-button w3-section w3-teal w3-border"> Log in </button>
+        <button type="button" class="w3-button w3-section w3-white w3-border"> Reset </button>
+    </p>
+@{Html.EndForm();}
